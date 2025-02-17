@@ -1,25 +1,20 @@
 const surveyJson = {
   "title": "FORMULARIO DE REPORTE DE VENTAS",
-  "completedHtml": "<h3>Thank you for your feedback</h3>",
   "completedBeforeHtml": "<h3>Ya has completado el formulario</h3>",
-  "completedHtmlOnCondition": [
-    {
-      "html": "<h3>Thank you for your feedback</h3> <h4>We are glad that you love our product. Your ideas and suggestions will help us make it even better.</h4>"
-    },
-    {
-      "html": "<h3>Thank you for your feedback</h3> <h4>We are glad that you shared your ideas with us. They will help us make our product better.</h4>"
-    }
-  ],
   "loadingHtml": "<h3>Cargando formulario...</h3>",
   "pages": [
     {
       "name": "page1",
-      "title": "INFORMACIÓN DEL TITULAR DEL PROCESO",
+      "title": "",
       "elements": [
         {
           "type": "text",
           "name": "radicado",
-          "title": "Radicado del proceso"
+          "title": "Radicado del proceso",
+          "titleLocation": "top",
+          "defaultValueExpression": "{radicadoVar}",
+          "isRequired": true,
+          "readOnly": true
         },
         {
           "type": "text",
